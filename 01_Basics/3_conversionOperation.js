@@ -1,5 +1,7 @@
 let score = 100;
 
+
+
 console.log(typeof score);
 console.log(typeof (score));
 
@@ -44,3 +46,20 @@ let str3 = " Javascript"
 let str = str1 + str2 + str3;
 
 console.log(str);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+console.log((2 + 2) * 3 % 6); // no a good practice
+
+console.log(+true);
+console.log(+"");
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2 //not a good practice
+
+let counter = 100 
+++counter
+console.log(counter)
