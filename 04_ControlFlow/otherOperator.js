@@ -8,3 +8,8 @@ value1 = null ?? 10 ?? 20
 
 console.log(value1);
 
+// Terniary operator
+// condition ? true : false
+
+const bookPrice = 100
+bookPrice <= 50 ? console.log("less than 50") : console.log("More than 50");
