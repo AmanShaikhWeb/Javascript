@@ -43,21 +43,31 @@
       // clientX, clientY, screenX, screenY
       //altkey, ctrlkey, shiftkey, keyCode
 
-      document.getElementById('images').addEventListener('click',function(e){
-       console.log("clicked inside the ul");
-      }, false) // false is default parameter
+    //  document.getElementById('images').addEventListener('click',function(e){
+     //  console.log("clicked inside the ul");
+     // }, false) // false is default parameter
 
-      document.getElementById('ironman').addEventListener('click',function(e){
-        console.log("ironman Clicked");
+     // document.getElementById('ironman').addEventListener('click',function(e){
+      //  console.log("ironman Clicked");
        // e.stopPropagation() // this function is use to break bubble
-      }, false)
+    //  }, false)
 
-      document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault()
-        e.stopPropagation()
-        console.log("google clicked");
-      },false)
+     // document.getElementById('google').addEventListener('click',function(e){
+      //  e.preventDefault()
+      //  e.stopPropagation()
+      //  console.log("google clicked");
+     // },false)
 
+     document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName = 'IMG'){
+            console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove()
+        }
+     })
+
+     // removeIt.parentNode.removeChild(removeIt)
 
     </script>
 </html>
