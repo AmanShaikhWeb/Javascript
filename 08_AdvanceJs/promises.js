@@ -4,7 +4,7 @@ const promiseOne = new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log('Async Task Is Completed');
         resolve()
-    }, 2000)
+    }, 1000)
 })
 
 promiseOne.then(function(){
@@ -21,4 +21,16 @@ new Promise(function(resolve, reject){
     
 }).then(function(){
     console.log("Second Async Resolved");
+})
+
+//
+
+const promiseThree = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve({username: "Aman", password: 1234567})
+    },3000)
+})
+
+promiseThree.then(function(user){
+    console.log(user);
 })
